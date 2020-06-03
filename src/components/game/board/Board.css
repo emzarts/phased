@@ -13,9 +13,14 @@
     position: relative;
     flex: 1;
     margin: 6px;
-    background-color: #5C5C5C;
-    border-radius: 20px;
-    box-shadow: 0 3px 3px 0 black}
+    background-color: #666666;
+    border-radius: 15%;
+    box-shadow: 0 3px 3px 0 black
+}
+
+.Green-Tile {
+    background-color: #9DD333;
+}
 
 /**
 * meant to set the aspect ratio of the tile as 1:1 
