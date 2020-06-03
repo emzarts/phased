@@ -38,7 +38,15 @@
     right: 0;
     bottom: 0;
     top: 0;
+    width: 100%;
+    border: none;
     display: flex;
+    border-radius: 15%;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
+}
+
+.Board-Tile-Content:hover {
+    cursor: pointer;
 }
