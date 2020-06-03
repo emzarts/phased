@@ -18,8 +18,24 @@
     box-shadow: 0 3px 3px 0 black
 }
 
-.Green-Tile {
+.Tile-Red {
+    background-color: #F39144;
+}
+
+.Tile-Yellow {
+    background-color: yellow;
+}
+
+.Tile-Green {
     background-color: #9DD333;
+}
+
+.Tile-Blue {
+    background-color: blue;
+}
+
+.Tile-Purple {
+    background-color: purple;
 }
 
 /**

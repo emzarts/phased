@@ -10,7 +10,7 @@ function App() {
           PHASED
         </p>
       </header>
-      <Game highScore={10}/>
+      <Game rows={5} cols={4} highScore={10}/>
     </div>
   );
 }

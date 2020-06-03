@@ -14,7 +14,7 @@ export default class Tile extends React.Component {
 
     render() {
         return (
-            <div className="Board-Tile">
+            <div className={"Board-Tile Tile-" + this.props.color}>
                 <button onClick={this.handleClick} className="Board-Tile-Content">
                 </button>    
             </div>
@@ -25,5 +25,6 @@ export default class Tile extends React.Component {
 Tile.propTypes = {
     row: PropTypes.number.isRequired,
     col: PropTypes.number.isRequired,
+    color: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired
 };
