@@ -22,7 +22,38 @@ export default class Game extends React.Component {
             highScore: this.props.highSchore
         }
         this.handleTilePress = this.handleTilePress.bind(this);
+        this.clearBoard = this.clearBoard.bind(this);
     }
+
+    clearBoard() {
+        this.setState(
+            {
+                boardState: Array(this.props.rows).fill().map(() => Array(this.props.cols).fill(TileColor.EMPTY)),
+            }
+        );
+    }
+
+    componentDidMount() {
+        const rows = this.props.rows;
+        const cols = this.props.cols;
+        console.log("I HAVE BEEN RENDERED");
+        setInterval(() => {
+            console.log('Interval triggered');
+            this.clearBoard();
+            let boardState = this.state.boardState;
+            let row = Math.floor(Math.random() * rows);
+            let col = Math.floor(Math.random() * cols);
+            console.log(row, col);
+            boardState[row][col] = 1;
+            this.setState(
+                {
+                    boardState: boardState
+                }
+            )
+        }, 1000);
+
+
+    };
 
     handleTilePress(row, col) {
         console.log(row, col);
