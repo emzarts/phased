@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/App.css';
+import Game from './game/Game';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
           PHASED
         </p>
       </header>
+      <Game />
     </div>
   );
 }

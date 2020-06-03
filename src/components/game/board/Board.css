@@ -1,0 +1,37 @@
+.Game-Board {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Board-Row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Board-Tile {
+    position: relative;
+    flex: 1;
+    margin: 6px;
+}
+
+/**
+* meant to set the aspect ratio of the tile as 1:1 
+**/
+.Board-Tile:after {
+    content: "";
+    float:left;
+    display: block;
+    padding-top: 100%;
+}
+
+.Board-Tile-Content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
