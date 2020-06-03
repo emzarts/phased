@@ -16,7 +16,7 @@ export default class Board extends React.Component {
         for (let rows = 0; rows < this.props.height; rows++) {
             let row = []
             for (let cols = 0; cols < this.props.width; cols++) {
-                row.push(<Tile key={rows + ' ' + cols} row={rows} col={cols} />)
+                row.push(<Tile key={rows + ' ' + cols} onClick={this.props.handleTilePress} row={rows} col={cols} />)
             }
             board.push(<div key={rows} className="Board-Row">{row}</div>)
         }

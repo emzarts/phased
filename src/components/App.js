@@ -10,7 +10,7 @@ function App() {
           PHASED
         </p>
       </header>
-      <Game />
+      <Game highScore={10}/>
     </div>
   );
 }
